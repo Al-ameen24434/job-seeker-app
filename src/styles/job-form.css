@@ -1,0 +1,64 @@
+
+
+.job-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.job-form.dark {
+  background: #121212;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.job-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #6366f1;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.job-form.dark .form-group label {
+  color: #aaa;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  background: white;
+}
+
+.job-form.dark .form-group input,
+.job-form.dark .form-group select {
+  background: #1e1e1e;
+  border-color: #444;
+  color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}

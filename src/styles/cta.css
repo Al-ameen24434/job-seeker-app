@@ -1,0 +1,30 @@
+/* src/styles/cta.css */
+
+.bg-gradient {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.bg-gradient h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.bg-gradient p {
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.bg-gradient .btn-outline {
+  background: white;
+  color: #6366f1;
+  border-color: white;
+}
+
+.bg-gradient .btn-outline:hover {
+  color: #4f46e5;
+}

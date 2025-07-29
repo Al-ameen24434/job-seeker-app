@@ -1,0 +1,164 @@
+/* src/styles/job-list.css */
+
+.job-list-container {
+  margin: 2rem 0;
+}
+
+.job-list-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+}
+
+.job-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.job-list-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.job-list-item.dark {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+.job-list-info {
+  flex: 1;
+}
+
+.job-company {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.job-list-item.dark .job-company {
+  color: #f1f5f9;
+}
+
+.job-role {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.job-list-item.dark .job-role {
+  color: #94a3b8;
+}
+
+.job-status {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+.status-applied {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-interview {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-offer {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Dark mode variants */
+.job-list-item.dark .status-applied {
+  background: #252f5a;
+  color: #a5b4fc;
+}
+
+.job-list-item.dark .status-interview {
+  background: #5a4a25;
+  color: #fde68a;
+}
+
+.job-list-item.dark .status-offer {
+  background: #255a34;
+  color: #a7f3d0;
+}
+
+.job-list-item.dark .status-rejected {
+  background: #5a2525;
+  color: #fca5a5;
+}
+
+.job-delete-btn {
+  background: #fee2e2;
+  color: #ef4444;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.job-delete-btn:hover {
+  background: #fecaca;
+  color: #dc2626;
+}
+
+.job-list-item.dark .job-delete-btn {
+  background: #5a2525;
+  color: #fca5a5;
+}
+
+.job-list-item.dark .job-delete-btn:hover {
+  background: #7f1d1d;
+}
+
+.job-list-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.job-list-item.dark .job-list-empty {
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .job-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .job-delete-btn {
+    align-self: flex-end;
+  }
+}
