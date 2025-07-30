@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container">
+      <div className="container bottom-section">
         <div className="bg-gradient">
           <h2>Let's Work Together</h2>
           <p>I'm open to freelance projects and full-time frontend roles.</p>
